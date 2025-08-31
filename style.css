@@ -1,0 +1,102 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  font-family: arial;
+}
+
+.ul-mainmenu {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.li-mainmenu {
+  list-style-type: none;
+  padding: 20px;
+  color: white;
+}
+
+.li-mainmenu:hover {
+  background-color: #404040;
+  transition: 0.2s ease-in-out;
+  transition-delay: 0.01s;
+  border-radius: 8px;
+}
+
+.a-mainmenu {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar {
+  width: 15%;
+  text-align: center;
+  align-content: center;
+  vertical-align: top;
+  color: white;
+}
+
+.title-sidebar {
+  font-size: 25px;
+  line-height: 1.6;
+  color: red;
+}
+
+.type-sidebar {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.photo-sidebar {
+  width: 250px;
+  border-radius: 50%;
+}
+
+.data-sidebar {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.data-sidebar b {
+  color: red
+}
+
+.content{
+  width: 80%;
+  color: white;
+}
+
+.c1-content {
+  text-align: justify;
+}
+
+.c2-content {
+  text-align: center;
+}
+
+.table-content {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.title-content{
+  color: red;
+}
+
+.content td {
+  padding: 15px;
+  vertical-align: top;
+}
+
+.footer {
+  font-size: 18px;
+  font-style: italic;
+  color: gray;
+}
