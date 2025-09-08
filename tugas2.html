@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valorant Community</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <h1><b>LOGIN</b></h1>
+        <div class="form-group">
+          <label for="uname"><b>Username</b></label>
+          <input
+            type="text"
+            id="uname"
+            name="username"
+            class="form-control"
+            required placeholder="Enter your username"
+          />
+        </div>
+        <div class="form-group">
+          <label for="pass"><b>Password</b></label>
+          <input
+            type="password"
+            id="pass"
+            name="password"
+            class="form-control"
+            required placeholder="Enter your password"
+          />
+          <div class="route-group">
+            <select name="gender" required>
+                <option value="" disabled selected><b>Gender</b></option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+          </div><br>
+            <label><b>Type of User</b></label>
+            <div class="route-group">
+                <input type="radio" id="vandal" name="gun" value="vandal">
+                <label for="vandal">Vandal</label>
+                <input type="radio" id="phantom" name="gun" value="phantom">
+                <label for="phantom">Phantom</label>
+            </div><br>
+             <label><b>Choose Your Role</b></label>
+            <div class="route-group">
+                <input type="checkbox" id="duelist" name="role" value="duelist">
+                <label for="duelist">Duelist</label>
+                <input type="checkbox" id="initiator" name="role" value="initiator">
+                <label for="initiator">Initiator</label>
+                <input type="checkbox" id="sentinel" name="role" value="sentinel">
+                <label for="sentinel">Sentinel</label>
+                <input type="checkbox" id="controller" name="role" value="controller">
+                <label for="controller">Controller</label>
+            </div><br>
+            <div>
+              <p><b>Describe Yourself</b></p>
+              <textarea name="describe" rows="10" class="comment" placeholder="e.g. your personality, playstyle, origin, language, etc"></textarea>
+            </div>
+        </div>
+        <ul class="ul-login">
+          <table>
+            <tr>
+            <td><li><input type="submit" class="btn" value="Login"></li></a></td>
+            <td><li><input type="reset" class="btn" value="reset" /></li></td>
+            </tr>
+          </table>
+        </ul>
+      </form>
+    </div>
+  </body>
+</html>
