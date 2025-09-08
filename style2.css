@@ -5,10 +5,9 @@
 }
 
 body {
-    min-height: 100vh;
+    height: 100vh;
     background-image: url(valorant.jpg);
     background-size: cover;
-    display: flex;
     font-family: arial;
 }
 
