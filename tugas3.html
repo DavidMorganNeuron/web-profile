@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 3 Pemrograman Web</title>
+    <link rel="stylesheet" href="style3.css" />
+  </head>
+  <body>
+    <!-- tabel kalkulator -->
+    <form name="formdaftar">
+      <div class="kalkulator-container">
+        <table class="tabel">
+          <tr>
+            <td colspan="2" class="judul"><b>Kalkulator Sederhana</b></td>
+          </tr>
+          <tr>
+            <td>Angka 1</td>
+            <td><input type="number" name="angka1" size="30" /></td>
+          </tr>
+          <tr>
+            <td>Angka 2</td>
+            <td><input type="number" name="angka2" size="30" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="tombol">
+              <button type="button" onclick="proses('+')" name="tambah">
+                +
+              </button>
+              <button type="button" onclick="proses('-')" name="kurang">
+                -
+              </button>
+              <button type="button" onclick="proses('*')" name="kali">×</button>
+              <button type="button" onclick="proses('/')" name="bagi">/</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Hasil</td>
+            <td><input type="number" name="hasil" size="30" readonly /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="reset" class="reset" value="reset" /></td>
+          </tr>
+        </table>
+      </div>
+      <script>
+        function proses(operator) {
+          // ambil nilai dari input angka1 dan angka2
+          let angka1 = parseFloat(document.formdaftar.angka1.value);
+          let angka2 = parseFloat(document.formdaftar.angka2.value);
+          let hasil = 0;
+
+          // validasi jika input kosong
+          if (isNaN(angka1) || isNaN(angka2)) {
+            alert("Isi kedua angka terlebih dahulu!");
+            return;
+          }
+
+          // operasi berdasarkan tombol yang ditekan
+          if (operator === "+") {
+            hasil = angka1 + angka2;
+          } else if (operator === "-") {
+            hasil = angka1 - angka2;
+          } else if (operator === "*") {
+            hasil = angka1 * angka2;
+          } else if (operator === "/") {
+            if (angka2 === 0) {
+              alert("Tidak terdefinisi");
+              return;
+            }
+            hasil = angka1 / angka2;
+          }
+
+          // hasil
+          document.formdaftar.hasil.value = hasil;
+        }
+      </script>
+    </form>
+  </body>
+</html>
